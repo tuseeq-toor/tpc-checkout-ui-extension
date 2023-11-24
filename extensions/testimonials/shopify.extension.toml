@@ -7,8 +7,8 @@ api_version = "2023-10"
 
 [[extensions]]
 type = "ui_extension"
-name = "checkout-testimonials"
-handle = "checkout-testimonials"
+name = "testimonials"
+handle = "testimonials"
 
 # Controls where in Shopify your extension will be injected,
 # and the file that contains your extension’s source code. Learn more:
@@ -43,4 +43,20 @@ api_access = true
 # your extension. Learn more:
 # https://shopify.dev/docs/api/checkout-ui-extensions/unstable/configuration#settings-definition
 
-
+[extensions.settings]
+  [[extensions.settings.fields]]
+  key = "saleText"
+  type = "multi_line_text_field"
+  name = "Sale Text"
+  [[extensions.settings.fields]]
+  key = "subHeadline1"
+  type = "multi_line_text_field"
+  name = "Sub-Headline-1"
+  [[extensions.settings.fields]]
+  key = "mainHeadline"
+  type = "multi_line_text_field"
+  name = "Main Headline"
+  [[extensions.settings.fields]]
+  key = "subHeadline2"
+  type = "multi_line_text_field"
+  name = "Sub-Headline-2"
